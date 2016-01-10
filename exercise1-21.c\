@@ -1,0 +1,22 @@
+//mnot complete
+
+#include<stdio.h>
+#define N 4
+int main(){
+int i,ch,cnt=0;
+	while((ch=getchar())!=EOF)
+		if(ch==' ')
+			cnt++;
+			if(cnt==N)
+			putchar('\t');
+			else
+			{
+				for(i=0;i<=cnt;i++)
+				putchar(' ');
+			}
+		
+		else
+		putchar(ch);
+		cnt=0;
+
+}
